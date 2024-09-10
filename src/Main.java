@@ -1,13 +1,16 @@
-
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        CaixaEletronico caixaEletronico = new CaixaEletronico(100);
 
-        double resultado = caixaEletronico.calculaDobro(100);
+        Scanner input = new Scanner(System.in);
+        CaixaEletronico caixaEletronico = new CaixaEletronico(100, input);
 
-        System.out.println("O resultado foi: "  + resultado);
+//        double resultado = caixaEletronico.calculaDobro(100);
+
+//        System.out.println("O resultado foi: "  + resultado);
+
+        caixaEletronico.exibirMenu();
 
     }
 }
